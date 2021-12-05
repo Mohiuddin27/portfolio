@@ -1,0 +1,571 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+/* Adding all my sectiong tag fixed padding */
+section{
+    padding:80px;
+}
+/* Creating Banner area in css */
+.banner{
+    position:relative;
+    min-height: 100vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:black;
+    
+
+}
+.banner h2{
+    font-size:2.5em;
+    color:#444;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.banner h2 span{
+    font-size: 1.2em;
+    color:#efefef;
+}
+.banner h3{
+    font-size:1.5em;
+    font-weight: 500;
+    color:white;
+}
+.btn{
+    position:relative;
+    background: #009e66;
+    display:inline-block;
+    color:black;
+    margin-top:20px;
+    padding:10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.image{
+    padding-bottom:80px;
+    object-fit: cover;
+}
+.heading{
+    width:100%;
+    text-align: center;
+    margin-bottom:30px;
+    color:#111;
+}
+.heading p{
+    font-style:italic;
+    font-size:14px;
+}
+.heading h2{
+    font-size:3em;
+    color:#009e66;
+}
+.content{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.contentbx{
+    padding-left:40px;
+    text-align: justify;
+}
+.propic{
+    width:300px;
+    height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.contentbx h2{
+    font-weight: 300;
+    margin-bottom:10px;
+}
+.heading.bottom{
+    display:flex;
+    justify-content: space-between;
+}
+.bt{
+    margin-top:20px;
+}
+.w50{
+    min-width: 25%;
+}
+img{
+    max-width:100%;
+}
+.round{
+    position:relative;
+    background: #009e66;
+    display:inline-block;
+    color:black;
+    margin-top:20px;
+    padding:10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 40px; 
+}
+header{
+    position:fixed;
+    z-index:2;
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 100px;
+    transition: 0.5s;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .logo{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header ul{
+    position:relative;
+    display:flex;
+}
+header ul li{
+    list-style: none;
+    position:relative;
+}
+header ul li a{
+    text-decoration: none;
+    position:relative;
+    display:inline-block;
+    margin:0 15px;
+    color:white;
+}
+header.sticky{
+    background-color: #fff;
+    padding:20px 100px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color:black;
+}
+
+/* designing services layout in css */
+.services{
+    background: #111;
+}
+.heading.whites p{
+    color:white;
+}
+.services .content{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesbx{
+    color:white;
+    background-color: #161616;
+    margin:10px 15px;
+    padding:13px 15px;
+    text-align: center;
+    max-width: 330px;
+}
+.services .content .servicesbx:hover{
+    border-bottom:2px solid #009e66;
+    cursor:pointer;
+}
+.services .content .servicesbx p{
+    font-size:15px;
+    margin-top:10px;
+}
+.services .content .servicesbx i{
+    color:#009e66;
+    margin-bottom:10px;
+}
+
+/* creating work layout in css */
+.work .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+.work .content .workbx{
+    width:500px;
+    padding:20px;
+    
+    
+}
+.work .content .workbx img{
+    max-width:100%;
+    width:500px;
+    height:700px;
+    border:1px solid rgba(0,0,0,0,4);
+}
+.work .content .workbx img:hover{
+    box-shadow: 0 0 20px 5px #ccc;
+    transform:scale(1.008);
+    transition: 0.5s;
+}
+.work .content .workbx p{
+    text-align: center;
+    color:black;
+    margin-top:10px;
+    
+}
+.work .content .workbx a:link,
+.work .content .workbx a:visited
+.work .content .workbx a:active{
+    color:#161616;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Skill layout in css */
+.skills{
+    background-color: black;
+}
+.skills p{
+    margin-top:5px;
+    color:white;
+}
+.skills .row{
+    margin:1rem 0;
+
+}
+.skills .item{
+    padding:0.5rem 0;
+    margin:0.3rem 0;
+}
+.skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size:1.3rem;
+    position:relative;
+
+}
+.skills .item-text span{
+    color:white;
+}
+.skills .item-text span:last-child{
+    position:absolute;
+}
+.skills .item-text .w-90{
+    margin-left:85%;
+}
+.skills .item-text .w-80{
+    margin-left:75%;
+}
+.skills .item-text .w-75{
+    margin-left:70%;
+}
+.skills .item-text .w-70{
+    margin-left:65%;
+}.skills .item-text .w-60{
+    margin-left:55%;
+}.skills .item-text .w-50{
+    margin-left:45%;
+}
+.progress{
+    margin:0.8rem 0;
+    border-radius:10px;
+    height:16px;
+    width:100%;
+    background-color:#161616;
+    overflow: hidden;
+}
+.progress-bar{
+    background-color: #009e66;
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90{
+    width:90%;
+}
+.progress-bar.w-80{
+    width:80%;
+}
+.progress-bar.w-75{
+    width:75%;
+}
+.progress-bar.w-70{
+    width:70%;
+}
+.progress-bar.w-60{
+    width:60%;
+}
+.progress-bar.w-50{
+    width:50%;
+}
+.skills .row{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:2rem
+}
+
+
+/* creating contact layout in css */
+.contact{
+    background-color:black;
+
+}
+.formbx{
+    min-width:60%;
+    /* margin-top:-320px; */
+}
+.formbx form{
+    display: flex;
+    flex-direction: column;
+}
+.formbx form h3,
+.contactinfo h3{
+    color:white;
+    font-size:20px;
+    font-weight: 500;
+    margin-bottom:10px;
+
+}
+.formbx form input,
+.formbx form textarea{
+    margin-bottom:20px;
+    padding:15px;
+    font-size: 16px;
+    background:transparent;
+    border:none;
+    outline:none;
+    background:#161616;
+    color:white;
+    resize:vertical;
+}
+.formbx form input:focus,
+.formbx form textarea:focus{
+    border-bottom:1px solid #009e66;
+    transition: 0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition:0.5s;
+    -o-transition: 0.5s;
+}
+.formbx form input::placeholder,
+.formbx form textarea::placeholder{
+    color:#999;
+}
+.formbx form input[type="submit"]{
+    background: #009366;
+    max-width: 250px;
+    cursor:pointer;
+    border-radius: 50px;
+    font-weight: 600;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+    letter-spacing: 2px;
+}
+.contactinfo{
+    min-width: 40%;
+}
+.contactinfo p{
+    color:#999;
+}
+.contactinfobx{
+    position:relative;
+}
+.contactinfobx .box{
+    position:relative;
+    padding:20px 0;
+    display:flex;
+}
+.contactinfobx .box .icon{
+    color:white;
+    min-width:40px;
+    padding-top:4px;
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    font-size:24px;
+}
+.contactinfobx .box .text{
+    color:#999;
+    margin-left:20px;
+    font-size:16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactinfobx .box .text p,address{
+    font-style:normal;
+    font-weight: 300;
+    color:#999;
+}
+.contactinfobx .box .text h3{
+    color:#009e66;
+    font-weight:500;
+    margin:0;
+}
+.contactinfobx .boxsocial{
+    display:flex;
+    flex-direction: row;
+    padding-left:60px;
+    letter-spacing: 15px;
+}
+.contactinfobx .boxsocial .fab{
+   font-size:42px;
+   color:#009e66;
+   cursor:pointer;
+}
+
+/* creating footer layout in css */
+.copyright{
+    background-color:black;
+    text-align: center;
+    color:white;
+    padding:10px;
+}
+
+
+/* making responsive layout */
+@media (max-width:991px){
+    header,
+    header.sticky{
+        padding:20px 50px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .menu{
+        position: fixed;
+        background-color: #fff;
+        display: block;
+        top:70px;
+        left:-100%;
+        padding:100px 50px;
+        width:100%;
+        height:100vh;
+        text-align:center;
+        transition:0.5s;
+        border-top:1px solid rgba(0,0,0,0,2);
+    }
+    header .menu.active{
+        position: fixed;
+        background-color: #fff;
+        display: block;
+        top:70px;
+        left:0;
+        padding:100px 50px;
+        width:100%;
+        height:100vh;
+        text-align:center;
+        border-top:1px solid rgba(0,0,0,0,2);
+    }
+    header ul li a{
+        font-size:20px;
+        color:#111;
+        font-weight: 400;
+        margin:10px 0px;
+
+
+    }
+    .toggle{
+        width:40px; 
+        height:40px;
+        background:url(../img/menu.png);
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size:30px;
+        cursor:pointer;
+
+
+    }
+    .toggle.active{
+        width:40px;
+        height:40px;
+        background:url(../img/close.png);
+        background-position: center;
+        background-size:25px;
+        background-repeat: no-repeat;
+        cursor:pointer;
+    }
+    header.sticky .toggle{
+        filter:invert(1);
+        -webkit-filter: invert(1);
+    }
+    section{
+        padding:100px 30px;
+    }
+    .banner h2{
+        font-size:1.5em
+    }
+    .banner h3{
+        font-size:1em;
+    }
+    .btn{
+        margin-top:10px;
+        padding:10px 20px;
+        font-size:16px;
+        border-radius: 50px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content  .w50 img{
+        display:block;
+        margin:0 auot 30px auto;
+    }
+    .contentbx{
+        padding:0;
+    }
+    .contentbx h2{
+        font-size:20px;
+        font-weight: 300;
+    }
+    .contentbx h3{
+        font-size:20px; 
+    }
+    .heading h2{
+        font-size:25px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .testimonial .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 30px;
+    }
+    .heading.bottom{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction:row;
+    }
+}
+
+@media (max-width: 600px){
+    .testimonial .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 30px;
+    }
+    .heading.bottom{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction:column;
+    }
+}
